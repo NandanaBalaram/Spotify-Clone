@@ -69,8 +69,8 @@ function displayPlayLists(data) {
 async function followPlayList() {
     try {
         
-        await authorization();
-        //const token = await getToken();
+        //await authorization();
+        const token = await getToken();
         const result = await fetch(
             `https://api.spotify.com/v1/playlists/2k4ZCcr63xfaksR0YdyfVu/followers`,
             
